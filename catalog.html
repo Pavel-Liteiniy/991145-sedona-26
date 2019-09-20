@@ -15,18 +15,51 @@
 			</ul>
 		</nav>
 		<a href="index.html" title="Главное меню">
-			<img src="img/logo.png" alt="Логотип штата Седона" width="160" height="70">
+			<img src="img/logo.svg" alt="Логотип города Седона" width="160" height="70">
 		</a>
 	</header>
 	<main>
-		<h1>Поиск места для проживания</h1>
+		<!-- Красная зона макета-->
+		<!-- <h1 class="visually-hidden">Поиск места для проживания</h1>
 		<section>
-			<h2>Фильтры для подбора жилья</h2>
-			<!-- Форма и прочее -->
-		</section>
+			<h2 class="visually-hidden">Фильтры для подбора жилья</h2>
+			<form action="https://echo.htmlacademy.ru" method="post" oninput="min-price.value=min-price.value">
+				<fieldset>
+					<legend>Инфраструктура:</legend>
+					<input type="checkbox" id="filter-swimming-pool" name="swimming-pool" checked>
+					<label for="filter-swimming-pool">Бассейн</label>
+					<input type="checkbox" id="filter-parking" name="parking">
+					<label for="filter-parking">Парковка</label>
+					<input type="checkbox" id="filter-wi-fi" name="wi-fi">
+					<label for="filter-wi-fi">Wi-Fi</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Тип жилья:</legend>
+					<input type="checkbox" id="filter-hotel" name="hotel" checked>
+					<label for="filter-hotel">Гостиница</label>
+					<input type="checkbox" id="filter-motel" name="motel" checked>
+					<label for="filter-motel">Мотель</label>
+					<input type="checkbox" id="filter-apartaments" name="apartments" checked>
+					<label for="filter-apartaments">Апартаменты</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Стоимость в сутки (Р):</legend>
+					<label for="filter-min-price">От</label>
+					<output name="min-price">0</output>
+					<input type="range" id="filter-min-price" name="min-price" min="0" max="4000" step="100" value="0">
+					<label for="filter-max-price">До</label>
+					<output name="max-price">0</output>
+					<input type="range" id="filter-max-price" name="max-price" min="0" max="4000" step="100" value="3000">
+				</fieldset>
+
+				<button type="submit">Показать</button>
+			</form>
+		</section> -->
 
 		<section>
-			<h2>Список мест где можно остановиться</h2>
+			<h2 class="visually-hidden">Список подобранных мест для проживания</h2>
 			<ul>
 				<li>
 					<h3><a href="hotel-item.html">Amara Resort & Spa</a></h3>
@@ -37,6 +70,9 @@
 					<p>
 						<a href="hotel-item.html">Подробнее</a>
 						<a href="book.html">Забронировать</a>
+					</p>
+					<p>
+						Рейтинг: 8,5
 					</p>
 					<a href="hotel-item.html"><img src="img/hotel.jpg" alt="Фотография гостиницы Amara Resort & Spa" width="135" height="90"></a>
 				</li>
@@ -50,6 +86,9 @@
 						<a href="hotel-item.html">Подробнее</a>
 						<a href="book.html">Забронировать</a>
 					</p>
+					<p>
+						Рейтинг: 8,9
+					</p>
 					<a href="hotel-item.html"><img src="img/motel.jpg" alt="Фотография мотеля Desert Quail Inn" width="135" height="90"></a>
 				</li>
 				<li>
@@ -62,15 +101,20 @@
 						<a href="hotel-item.html">Подробнее</a>
 						<a href="book.html">Забронировать</a>
 					</p>
+					<p>
+						Рейтинг: 9,2
+					</p>
 					<a href="hotel-item.html"><img src="img/apartament.jpg" alt="Фотография апартаментов Villas at Poco Diablo" width="135" height="90"></a>
 				</li>
 			</ul>
 		</section>
 	</main>
 	<footer>
+		<h2 class="visually-hidden">Дополнительные источники информации о Седоне</h2><!-- Нужен ли заголовок для футера вообще? -->
 		<a href="https://www.instagram.com/explore/tags/visitsedona/">#VISITSEDONA</a>
 
 		<div>
+			<h3 class="visually-hidden">Седона в социальных сетях</h3>
 			<ul>
 				<li><a href="https://twitter.com/?lang=ru">twitter</a></li>
 				<li><a href="https://ru-ru.facebook.com/">facebook</a></li>

@@ -14,47 +14,118 @@
 				<li><a href="catalog.html">Гостиницы</a></li>
 			</ul>
 		</nav>
-		<a href="#" title="Главное меню">
-			<img src="img/logo-sedona.svg" alt="Логотип штата Седона" width="160" height="70">
-		</a>
+		<img src="img/logo-sedona.svg" alt="Логотип города Седона" width="160" height="70">
 	</header>
 	<main>
 		<section>
-			<h1>Путеществие в Седону</h1>
+			<h1 class="visually-hidden">Седона - город в штате Аризона</h1>
+			<img src="img/intro-welcome.svg" alt="welcome to the gorgeous Sedona. &laquo;Because the Grand Canyon sucks!&raquo;" width="1200" height="800">
+			<img src="img/background-index.jpg" alt="Пейзаж в виде каменистого ущелья и деревьев" width="1200" height="800">
 			<p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-			<img src="img/greeting.png" alt="Добро пожаловать в седону!" width="1200" height="800">
-		</section>
-
-		<section>
-			<h2>Преимущества Седоны</h2>
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-			<!-- формы и прочее -->
 		</section>
 
-		<section>
-			<h2>Подбор места для проживания</h2>
-			<p>
-				<span>Заинтересовались?</span>
-				<br>
-				Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
-			</p>
-			<button>Поиск гостиницы в Седоне</button>
-			<!-- Форма и карта - достаточная реализация — обычное изображение.-->
-		</section>
-	</main>
-	<footer>
-		<a href="https://www.instagram.com/explore/tags/visitsedona/">#VISITSEDONA</a>
-
-		<div>
+		<!-- красная зона макета -->
+		 <!-- <section>
+			<h2>Преимущества Седоны</h2>
 			<ul>
-				<li><a href="https://twitter.com/?lang=ru">twitter</a></li>
-				<li><a href="https://ru-ru.facebook.com/">facebook</a></li>
-				<li><a href="https://www.youtube.com/?gl=RU&hl=ru">youtube</a></li>
+				<li>
+					<h3>Настоящий городок</h3>
+					<sapn>— №1 —</sapn>
+					<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+					<img src="img/sedona-advantage-true-city.jpg" width="800" height="250" alt="Фото улицы в городе Седона с деревянными домами и флагом США на фоне гор">
+					<ul>
+						<li>
+							<h4>Жильё</h4>
+							<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+						</li>
+						<li>
+							<h4>Еда</h4>
+							<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+						</li>
+						<li>
+							<h4>Сувениры</h4>
+							<p>Не только китайского, но и местного производства!</p>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h3>Там есть Мост дьявола</h3>
+					<span>— №2 —</span>
+					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+					<img src="img/sedona-advantage-devil-bridge.jpg" width="800" height="250" alt="Мост дьявола представляющий из себя небезопасно выглядящий природный мост из красной скалистой породы над пропастью">
+				</li>
+				<li>
+					<h3>Небольшая площадь</h3>
+					<span>— №3 —</span>
+					<p>Все достопримечательности находятся очень близко</p>
+				</li>
+				<li>
+					<h3>Красивая дорога</h3>
+					<span>— №4 —</span>
+					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				</li>
+				<li>
+					<h3>Мало туристов</h3>
+					<span>— №5 —</span>
+					<p>Большинство едет в гранд каньон и толпится там</p>
+				</li>
 			</ul>
-		</div>
+		</section>
+	-->
+	<section>
+		<h2 class="visually-hidden">Подбор места для проживания</h2>
 
-		<p>Website by</p>
-		<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-academy.png" alt="HTML Academy" width="115" height="41"></a>
-	</footer>
+		<p>
+			<span>Заинтересовались?</span>
+			Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+		</p>
+
+		<form action="https://echo.htmlacademy.ru" method="post">
+			<button type="button">Поиск гостиницы в Седоне</button> <!-- эта кнопка должна быть в форме или нет? -->
+			<p>
+				<label for="arrival-date">
+					Дата заезда:
+				</label>
+				<input type="date" id="arrival-date" name="arrival" value="2017-04-24">
+			</p>
+			<p>
+				<label for="date-of-departure">
+					Дата выезда:
+				</label>
+				<input type="date" id="date-of-departure" name="departure" value="2017-07-04">
+			</p>
+			<p>
+				<label for="adult-guest">
+					Взрослые:
+				</label>
+				<input type="number" id="adult-guest" name="adult" value="2" min="1">
+			</p>
+			<p>
+				<label for="child-guest">
+					Дети:
+				</label>
+				<input type="number" id="child-guest" name="child " value="0">
+			</p>
+			<button type="submit">Найти</button>
+		</form>
+	</section>
+</main>
+<footer>
+	<h2 class="visually-hidden">Дополнительные источники информации о Седоне</h2><!-- Нужен ли заголовок для футера вообще? -->
+	<a href="https://www.instagram.com/explore/tags/visitsedona/">#VISITSEDONA</a>
+
+	<div>
+		<h3 class="visually-hidden">Седона в социальных сетях</h3>
+		<ul>
+			<li><a href="https://twitter.com/?lang=ru">twitter</a></li>
+			<li><a href="https://ru-ru.facebook.com/">facebook</a></li>
+			<li><a href="https://www.youtube.com/?gl=RU&hl=ru">youtube</a></li>
+		</ul>
+	</div>
+
+	<p>Website by</p>
+	<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-academy.png" alt="HTML Academy" width="115" height="41"></a>
+</footer>
 </body>
 </html>

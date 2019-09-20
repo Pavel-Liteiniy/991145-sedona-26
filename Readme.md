@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Pavel Sevostyanov](https://up.htmlacademy.ru/htmlcss/26/user/991145).
-* Наставник: [К сожалению, у меня нет наставника](https://up.htmlacademy.ru/htmlcss/26/user/1).
+* Наставник: [Ярослав Макаренко](https://htmlacademy.ru/profile/id234926).
 
 ---
 
