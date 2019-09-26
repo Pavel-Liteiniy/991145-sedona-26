@@ -3,10 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header>
-		<nav>
+		<nav class="main-navigation">
 			<ul>
 				<li><a href="info.html">Информация</a></li>
 				<li><a href="content.html">Фото и видео</a></li>
@@ -24,13 +27,12 @@
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 		</section>
 
-		<!-- красная зона макета -->
-		 <!-- <section>
+		<section>
 			<h2>Преимущества Седоны</h2>
 			<ul>
 				<li>
 					<h3>Настоящий городок</h3>
-					<sapn>— №1 —</sapn>
+					<span>— №1 —</span>
 					<p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 					<img src="img/sedona-advantage-true-city.jpg" width="800" height="250" alt="Фото улицы в городе Седона с деревянными домами и флагом США на фоне гор">
 					<ul>
@@ -71,62 +73,69 @@
 				</li>
 			</ul>
 		</section>
-	-->
-	<section>
-		<h2 class="visually-hidden">Подбор места для проживания</h2>
 
-		<p>
-			<span>Заинтересовались?</span>
-			Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
-		</p>
-		<button type="button">Поиск гостиницы в Седоне</button>
-		<img src="img/map_8-bit.png" alt="Карта. Город Седона, расположен по обе стороны границы между округами Коконино и Явапаи в северной части долины Верде штата Аризона">
-	</section>
-		
-	<section>
-		<form action="https://echo.htmlacademy.ru" method="post">
-			<p>
-				<label for="arrival-date">
-					Дата заезда:
-				</label>
-				<input type="date" id="arrival-date" name="arrival" value="2017-04-24">
-			</p>
-			<p>
-				<label for="date-of-departure">
-					Дата выезда:
-				</label>
-				<input type="date" id="date-of-departure" name="departure" value="2017-07-04">
-			</p>
-			<p>
-				<label for="adult-guest">
-					Взрослые:
-				</label>
-				<input type="number" id="adult-guest" name="adult" value="2" min="1">
-			</p>
-			<p>
-				<label for="child-guest">
-					Дети:
-				</label>
-				<input type="number" id="child-guest" name="child " value="0">
-			</p>
-			<button type="submit">Найти</button>
-		</form>
-	</section>
-</main>
-<footer>
-	<a href="https://www.instagram.com/explore/tags/visitsedona/">#VISITSEDONA</a>
+		<section>
+			<h2 class="visually-hidden">Подбор места для проживания</h2>
 
-	<div>
-		<h2 class="visually-hidden">Седона в социальных сетях</h2>
-		<ul>
-			<li><a href="https://twitter.com/?lang=ru">twitter</a></li>
-			<li><a href="https://ru-ru.facebook.com/">facebook</a></li>
-			<li><a href="https://www.youtube.com/?gl=RU&hl=ru">youtube</a></li>
-		</ul>
-	</div>
+			<p>
+				<span>Заинтересовались?</span>
+				Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+			</p>
+			<button type="button">Поиск гостиницы в Седоне</button>
+		</section>
 
-	<p>Website by</p>
-	<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="115" height="41"></a>
-</footer>
+		<div>
+			<h2 class="visually-hidden">Карта месторасположения города Седона</h2>
+			<p class="visually-hidden">Город Седона, расположен по обе стороны границы между округами Коконино и Явапаи в северной части долины Верде штата Аризона"</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352624.67312168976!2d-111.78821900934564!3d34.80284207824331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1569267821314!5m2!1sru!2sru" width="1200" height="600" frameborder="0" style="border:0;" allowfullscreen="">
+				Здесь должна была быть интерактивная карта, но ваш браузер не поддерживает "iframe"
+			</iframe>
+		</div>
+
+		<section>
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<label for="arrival-date">
+						Дата заезда:
+					</label>
+					<input type="date" id="arrival-date" name="arrival" value="2017-04-24">
+				</p>
+				<p>
+					<label for="date-of-departure">
+						Дата выезда:
+					</label>
+					<input type="date" id="date-of-departure" name="departure" value="2017-07-04">
+				</p>
+				<p>
+					<label for="adult-guest">
+						Взрослые:
+					</label>
+					<input type="number" id="adult-guest" name="adult" value="2" min="1">
+				</p>
+				<p>
+					<label for="child-guest">
+						Дети:
+					</label>
+					<input type="number" id="child-guest" name="child " value="0">
+				</p>
+				<button type="submit">Найти</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<a href="https://www.instagram.com/explore/tags/visitsedona/">#VISITSEDONA</a>
+
+		<div>
+			<h2 class="visually-hidden">Седона в социальных сетях</h2>
+			<ul>
+				<li><a href="https://twitter.com/?lang=ru">twitter</a></li>
+				<li><a href="https://ru-ru.facebook.com/">facebook</a></li>
+				<li><a href="https://www.youtube.com/?gl=RU&hl=ru">youtube</a></li>
+			</ul>
+		</div>
+
+		<p>Website by</p>
+		<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="115" height="41"></a>
+	</footer>
 </body>
 </html>
