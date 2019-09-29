@@ -9,35 +9,54 @@
 	overflow: hidden;
 }
 
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('PT Sans'),
+	url('/fonts/ptsans.woff2') format('woff2'),
+	url('/fonts/ptsans.woff') format('woff'),
+}
+
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('PT Sans'),
+	url('/fonts/ptsansbold.woff2') format('woff2'),
+	url('/fonts/ptsansbold.woff') format('woff'),
+}
+
 body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "PT Sans Narrow", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #000000;
-  text-transform: uppercase;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+	text-transform: uppercase;
+	font-kerning: none; /*|  | */
 
-  background-color: #ffffff;
+	background-color: #ffffff;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .main-navigation {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: bold;
-  color: #ffffff;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #ffffff;
 
-  background-color: #ffffff;
+	background-color: #ffffff;
 }
 
 .main-navigation ul {
-	  list-style: none;
+	list-style: none;
 }
 
 .main-navigation a {
@@ -46,24 +65,34 @@ a {
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-color: #81b3d2;
-outline: none;
+	color: #81b3d2;
+	outline: none;
 }
 
 .main-navigation a:active {
-color: #b2b2b2;
+	color: #b2b2b2;
 }
 
 .main-navigation .current-page {
 	color: #766357;
 }
 
+.main-introduction .introduction-slogan {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.introduction-welcome {
+	background-color: #61788a;
+}
+
 .features-list {
-  list-style: none;
+	list-style: none;
 }
 
 .feature-item ul {
-  margin: 0;
+	margin: 0;
 	padding: 0;
 
 	list-style: none;
@@ -71,12 +100,15 @@ color: #b2b2b2;
 
 .feature-item {
 	text-align: center;
+	line-height: 21px;
 
 	background-color: #eeeeee;
 }
 
 .feature-item:first-of-type,
 .feature-item:nth-of-type(2) {
+	color: #ffffff;
+
 	background-color: #81b3d2;
 }
 
@@ -87,12 +119,150 @@ color: #b2b2b2;
 .feature-item h3,
 .feature-item h4 {
 	font-size: 21px;
-  line-height: 25px;
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .feature-number,
 .feature-item p {
 	font-size: 14px;
-  line-height: 20px;
+}
+
+.hook-bold {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: bold;
+}
+
+.button {
+	font-size: 21px;
+	line-height: 26px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #ffffff;
+
+	border: none;
+}
+
+.access-search .access-button {
+	background-color: #a0938b;
+}
+
+.access-search .access-button:hover,
+.access-search .access-button:focus {
+	background-color: #604e43;
+	outline: none;
+}
+
+.access-search .access-button:active {
+	color: #928a85;
+	background-color: #503e33;
+}
+
+.search-form label,
+.search-form input {
+	font-size: 14px;
+	line-height: 26px;
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+
+}
+
+.search-form input {
+	background-color: #f2f2f2;
+	border: 2px solid #f2f2f2;
+}
+
+.search-form input:hover {
+	background-color: #ebebeb;
+	border: 2px solid #ebebeb;
+}
+
+.search-form input:focus {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+	outline: none;
+}
+
+.search-button {
+	background-color: #81b3d2;
+}
+
+.search-button:hover,
+.search-button:focus {
+	background-color: #669ec0;
+	outline: none;
+}
+
+.search-button:active {
+	color: #94b9d2;
+
+	background-color: #5496bd;
+}
+
+footer {
+	line-height: 26px;
+}
+
+footer .hashtag {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+footer a {
+	color: #000000;
+}
+
+footer a:hover,
+footer a:focus {
+	color: #81b3d2;
+	outline: none;
+}
+
+footer a:active {
+	color: #bdbbbc;
+}
+
+.logo-htmlacademy {
+	fill: #000000;
+}
+
+a:hover .logo-htmlacademy,
+a:focus .logo-htmlacademy {
+	fill: #81b3d2;
+}
+
+a:active .logo-htmlacademy {
+	fill: #bdbbbc;
+}
+
+.filters-residence {
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+	background: linear-gradient(135deg, #7a9dbd, #564a49);
+}
+
+.filters-residence fieldset {
+	border: none;
+}
+
+.filters-residence legend {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.filters-button {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #ffffff;
+	border: 2px solid #ffffff;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.filters-button:hover,
+.filters-button:focus {
+	color: #000000;
+	background-color: #ffffff;
 }
