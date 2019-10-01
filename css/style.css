@@ -83,8 +83,12 @@ a {
 	font-weight: bold;
 }
 
+.introduction-features {
+	line-height: 26px;
+}
+
 .introduction-welcome {
-	background-color: #61788a;
+	background: linear-gradient(150deg, #b3d0e3 30%, #82a9c9 45%, #4d4d4e 60%);
 }
 
 .features-list {
@@ -113,9 +117,11 @@ a {
 }
 
 .feature-item ul {
+	color: #000000;
+
 	background-color: #ffffff;
 }
-
+ 
 .feature-item h3,
 .feature-item h4 {
 	font-size: 21px;
@@ -257,6 +263,8 @@ a:active .logo-htmlacademy {
 	line-height: 21px;
 	font-weight: normal;
 	color: #ffffff;
+	text-transform: uppercase;
+
 	border: 2px solid #ffffff;
 	background-color: rgba(0, 0, 0, 0);
 }
@@ -265,4 +273,119 @@ a:active .logo-htmlacademy {
 .filters-button:focus {
 	color: #000000;
 	background-color: #ffffff;
+}
+
+.filters-results ul {
+	list-style: none;
+}
+
+.filters-results .bold {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.filters-results .sorting-types {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.filters-results .filter-button {
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #cacaca;
+
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.filters-results .filter-button:hover,
+.filters-results .filter-button:focus {
+	color: #81b3d2;
+	outline: none;
+}
+
+.filters-results .filter-button:active {
+	color: #000000;
+	border: none;
+}
+
+.filters-results .filter-checked {
+	color: #81b3d2;
+	border: none;
+}
+
+.filters-results .filter-checked:active {
+	color: #81b3d2;
+	border: none;
+}
+
+.available-offers ul {
+	list-style: none;
+}
+
+.offer-item {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.offer-name a {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.offer-name a:hover,
+.offer-name a:focus {
+	color: #81b3d2;
+	outline: none;
+}
+
+.offer-name a:active {
+	color: #cacaca;
+}
+
+.offer-item .offer-details,
+.offer-item .offer-book {
+	color: #ffffff;
+	font-weight: bold;
+
+	outline: none;
+}
+
+.offer-item .offer-details {
+	background-color: #81b3d2;
+}
+
+.offer-item .offer-details:hover,
+.offer-item .offer-details:focus {
+	background-color: #669ec0;
+}
+
+.offer-item .offer-details:active {
+	color: #88b6d1;
+
+	background-color: #5496bd;
+}
+
+.offer-item .offer-book {
+	background-color: #766357;
+}
+
+.offer-item .offer-book:hover,
+.offer-item .offer-book:focus {
+	background-color: #604e43;
+}
+
+.offer-item .offer-book:active {
+	color: #857871;
+
+	background-color: #503e33;
+}
+
+.offer-item .offer-rating {
+	background-color: #f2f2f2;
 }

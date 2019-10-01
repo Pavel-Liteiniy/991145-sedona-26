@@ -17,7 +17,7 @@
 				<li class="current-page">Гостиницы</li>
 			</ul>
 		</nav>
-		<a href="index.html" title="Главная страница">
+		<a class="logo-nav" href="index.html" title="Главная страница" aria-label="ссылка на главную страницу"> <!-- Нужно ли логотип делать ссылкой на главную? Если да, то как сделать красивый outline при фокусе? -->
 			<img src="img/logo-sedona.svg" alt="Логотип города Седона" width="160" height="70">
 		</a>
 	</header>
@@ -60,65 +60,65 @@
 		</section>
 
 		<section class="filters-results">
-			<p>
+			<p class="bold">
 				Найдено:
 				<span>3</span>
 			</p>
 			<p class="sorting-types">Сортировка:</p>
 			<ul>
-				<li><button type="button">По цене</button></li>
-				<li><button type="button">По типу</button></li>
-				<li><button type="button">По рейтингу</button></li>
+				<li><button class="filter-button filter-checked" type="button">По цене</button></li>
+				<li><button class="filter-button" type="button">По типу</button></li>
+				<li><button class="filter-button" type="button">По рейтингу</button></li>
 			</ul>
 		</section>
 
 		<section class="available-offers">
 			<h2 class="visually-hidden">Список подобранных мест для проживания</h2>
 			<ul>
-				<li>
-					<h3><a href="hotel-item.html">Amara Resort & Spa</a></h3>
+				<li class="offer-item">
+					<h3 class="offer-name"><a href="hotel-item.html">Amara Resort & Spa</a></h3>
 					<p>
 						<span>Гостиница</span>
 						<span>от 4000 Р</span>
 					</p>
 					<p>
-						<a href="hotel-item.html">Подробнее</a>
-						<a href="book.html">Забронировать</a>
+						<a class="offer-details" href="hotel-item.html">Подробнее</a>
+						<a class="offer-book" href="book.html">Забронировать</a>
 					</p>
-					<p>
+					<p class="offer-rating">
 						Рейтинг: 8,5
 					</p>
 					<a href="hotel-item.html"><img src="img/hotel.jpg" alt="Фотография гостиницы Amara Resort & Spa" width="135" height="90"></a>
 				</li>
-				<li>
-					<h3><a href="hotel-item.html"></a><a href="">Desert Quail Inn</a></h3>
+				<li class="offer-item">
+					<h3 class="offer-name"><a href="hotel-item.html"></a><a href="">Desert Quail Inn</a></h3>
 					<p>
 						<span>Мотель</span>
 						<span>от 3000 Р</span>
 					</p>
 					<p>
-						<a href="hotel-item.html">Подробнее</a>
-						<a href="book.html">Забронировать</a>
+						<a class="offer-details" href="hotel-item.html">Подробнее</a>
+						<a class="offer-book" href="book.html">Забронировать</a>
 					</p>
-					<p>
+					<p class="offer-rating">
 						Рейтинг: 8,9
 					</p>
 					<a href="hotel-item.html"><img src="img/motel.jpg" alt="Фотография мотеля Desert Quail Inn" width="135" height="90"></a>
 				</li>
-				<li>
-					<h3><a href="hotel-item.html"></a><a href="">Villas at Poco Diablo</a></h3>
+				<li class="offer-item">
+					<h3 class="offer-name"><a href="hotel-item.html"></a><a href="">Villas at Poco Diablo</a></h3>
 					<p>
 						<span>Апартаменты</span>
 						<span>от 2000 Р</span>
 					</p>
 					<p>
-						<a href="hotel-item.html">Подробнее</a>
-						<a href="book.html">Забронировать</a>
+						<a class="offer-details" href="hotel-item.html">Подробнее</a>
+						<a class="offer-book" href="book.html">Забронировать</a>
 					</p>
-					<p>
+					<p class="offer-rating">
 						Рейтинг: 9,2
 					</p>
-					<a href="hotel-item.html"><img src="img/apartament.jpg" alt="Фотография апартаментов Villas at Poco Diablo" width="135" height="90"></a>
+					<a href="hotel-item.html"><img src="img/apartment.jpg" alt="Фотография апартаментов Villas at Poco Diablo" width="135" height="90"></a>
 				</li>
 			</ul>
 		</section>
