@@ -8,18 +8,20 @@
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-	<header>
+	<header class="main-header">
+		<div class="container">
 		<nav class="main-navigation">
 			<ul>
 				<li><a href="info.html">Информация</a></li>
 				<li><a href="content.html">Фото и видео</a></li>
 				<li><a href="map.html">Карта штата</a></li>
-				<li class="current-page">Гостиницы</li>
+				<li><a class="current-page">Гостиницы</a></li>
 			</ul>
 		</nav>
-		<a class="logo-nav" href="index.html" title="Главная страница" aria-label="ссылка на главную страницу"> <!-- Нужно ли логотип делать ссылкой на главную? Если да, то как сделать красивый outline при фокусе? -->
+		<a class="logo-nav" href="index.html" title="Главная страница" aria-label="ссылка на главную страницу">
 			<img src="img/logo-sedona.svg" alt="Логотип города Седона" width="160" height="70">
 		</a>
+		</div>
 	</header>
 	<main>
 		<h1 class="visually-hidden">Места проживания в городе Седона</h1>
@@ -66,9 +68,9 @@
 			</p>
 			<p class="sorting-types">Сортировка:</p>
 			<ul>
-				<li><button class="filter-button filter-checked" type="button">По цене</button></li>
-				<li><button class="filter-button" type="button">По типу</button></li>
-				<li><button class="filter-button" type="button">По рейтингу</button></li>
+				<li><a class="filter-link filter-checked">По цене</a></li>
+				<li><a href="filter-type.html" class="filter-link">По типу</a></li>
+				<li><a href="filter-rate.html" class="filter-link">По рейтингу</a></li>
 			</ul>
 		</section>
 
@@ -88,7 +90,7 @@
 					<p class="offer-rating">
 						Рейтинг: 8,5
 					</p>
-					<a href="hotel-item.html"><img src="img/hotel.jpg" alt="Фотография гостиницы Amara Resort & Spa" width="135" height="90"></a>
+					<a href="hotel-item.html"><img src="img/Hotel.jpg" alt="Фотография гостиницы Amara Resort & Spa" width="135" height="90"></a>
 				</li>
 				<li class="offer-item">
 					<h3 class="offer-name"><a href="hotel-item.html"></a><a href="">Desert Quail Inn</a></h3>
@@ -103,7 +105,7 @@
 					<p class="offer-rating">
 						Рейтинг: 8,9
 					</p>
-					<a href="hotel-item.html"><img src="img/motel.jpg" alt="Фотография мотеля Desert Quail Inn" width="135" height="90"></a>
+					<a href="hotel-item.html"><img src="img/Motel.jpg" alt="Фотография мотеля Desert Quail Inn" width="135" height="90"></a>
 				</li>
 				<li class="offer-item">
 					<h3 class="offer-name"><a href="hotel-item.html"></a><a href="">Villas at Poco Diablo</a></h3>
@@ -128,7 +130,7 @@
 
 		<div>
 			<h2 class="visually-hidden">Седона в социальных сетях</h2>
-			<ul>
+			<ul class="social">
 				<li><a href="https://twitter.com/?lang=ru">twitter</a></li>
 				<li><a href="https://ru-ru.facebook.com/">facebook</a></li>
 				<li><a href="https://www.youtube.com/?gl=RU&hl=ru">youtube</a></li>
