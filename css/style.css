@@ -562,26 +562,37 @@ section.main-introduction {
 	background-repeat: no-repeat;
 }
 
-.feature-item-detailed li:first-child h4::before {
+.feature-item-detailed h4::before {
 	position: absolute;
 	content: " ";
+	left: 50%;
+}
+
+.feature-item-detailed li:first-child h4::before {
 	width: 75px;
 	height: 72px;
 	top: 60px;
-	left: 50%;
 	margin-left: -38px;
 	background-position: 50% 55%;
 	background-size: 75px 72px;
 	background-image: url("../img/icon-1.svg");
 }
 
-.feature-item-detailed li:nth-child(2) h4 {
+.feature-item-detailed li:nth-child(2) h4::before {
+	width: 74px;
+	height: 70px;
+	top: 61px;
+	margin-left: -37px;
 	background-position: 50% 55%;
 	background-size: 74px 70px;
 	background-image: url("../img/icon-3.svg");
 }
 
-.feature-item-detailed li:last-child h4 {
+.feature-item-detailed li:last-child h4::before {
+	width: 64px;
+	height: 76px;
+	top: 56px;
+	margin-left: -32px;
 	background-position: 50% 53%;
 	background-size: 64px 76px;
 	background-image: url("../img/icon-2.svg");
