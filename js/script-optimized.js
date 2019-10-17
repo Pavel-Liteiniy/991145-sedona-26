@@ -1,0 +1,1 @@
+var search_form=document.querySelector(".search-form"),access_button=document.querySelector(".access-button");access_button.addEventListener("click",function(e){e.preventDefault(),search_form.classList.toggle("hide-search-form"),search_form.classList.toggle("show-search-form")});
