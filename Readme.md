@@ -1,4 +1,4 @@
-# Личный проект «Седона»
+# Личный проект «Седона» ( [live demo](https://pavel-liteiniy.github.io/991145-sedona-26/) )
 
 * Студент: [Pavel Sevostyanov](https://up.htmlacademy.ru/htmlcss/26/user/991145).
 * Наставник: [Ярослав Макаренко](https://htmlacademy.ru/profile/id234926).
